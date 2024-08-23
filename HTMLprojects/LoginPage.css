@@ -1,0 +1,80 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 0;
+}
+
+.container 
+{
+    box-shadow: 0 0 30px goldenrod;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    color: goldenrod;
+    border-radius: 10px;
+    width: 300px; 
+}
+.container h2 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.container input {
+    width: 92%; 
+    padding: 10px;
+    margin: 10px 0;
+    background-color: black;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    font-size: 20px;
+    color: goldenrod;
+}
+
+.container button {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    background: goldenrod;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container button:hover {
+    background: black;
+    color: goldenrod;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.links a {
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.bright {
+    animation: glow 1.5s infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 10px goldenrod, 0 0 20px goldenrod, 0 0 30px goldenrod, 
+                     0 0 40px goldenrod, 0 0 50px goldenrod, 0 0 60px goldenrod;
+    }
+    50% {
+        text-shadow: 0 0 10px goldenrod, 0 0 20px goldenrod, 0 0 30px goldenrod, 
+                     0 0 40px goldenrod, 0 0 50px goldenrod, 0 0 60px goldenrod, 
+                     0 0 70px goldenrod;
+    }
+}
